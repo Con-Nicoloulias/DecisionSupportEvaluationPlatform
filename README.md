@@ -1,21 +1,22 @@
-# Wolf Goat Cabbage
+# Decision Support Evaluation Platform
 
-This is an ultra-simple toy problem to begin trying out some decision support ideas such as Plan Monitoring, logging action and decisions with PROV, and Narrative Generation. It has a similar structure to the Joadia game (Williams, Wong, Kamenetsky), and thus should be a stepping stone toward exercising concepts in that more sophisticated toy problem.
+A reusable system architecture to test different decision support environments. This provides an insight on which UI (decision support environment) works best for human decision makers to understand a particular scenario. An API web service was utilised to interact with a Python sourced game (Wolf_Goat_Cabbage), to create different decision support environments of the game with the use of web technologies.
 
-Run `demo.py` to see a game played. The Jupyter notebook `test.ipynb` is a good place to start seeing some of the parts do their thing. The underlying code is quite general, and can be used to model any situation with discrete time and locations and entities which can move, carry one another and conditionally do stuff at the end of each turn.
-
-## Scenario
+## Scenario (Python sourced game)
 The scenario is a well known puzzle and goes as follows. A farmer is on one side of a river with his wolf, goat and cabbage. He has a boat and needs to move the three items to the other side of the river. He can only fit one item at a time in the boat, and neither the goat and cabbage nor the wolf and goat can be left alone together, because in each case one will eat the other.
 
-Reference https://en.wikipedia.org/wiki/Wolf,_goat_and_cabbage_problem.
+## Using Express Server ##
+1. Install Node.js and NPM.
+   https://phoenixnap.com/kb/install-node-js-npm-on-windows
+2. In the terminal go to dir of server_express.
+3. Type "npm install" (This will install all dependency packages required to run the server).
+4. Type "npm install -g nodemon" (nodemon is used to dynamically reset the server when there are changes).
+5. Type "npm install --save node-fetch" (Used to fetch from Flask)
+6. Type "npm i moment" (Used to capture timestamps).
+7. Type "nodemon index.js" to run the server.
+8. Use http://localhost:8000 to access the server.
 
-## To Do
-  - human interface (simple terminal text based)
-  - logging mechanism for PROV and other formats (find the right way to do this)
-  - plan reading player
-  - unity animated 3d interface (!)
-  - non-deterministic actions (small probability of failure or wrong result)
-  - random appearance of new entities
-
-_Greg O'Keefe, February, June 2020, with important contributions from Steve Wark and Wolfgang Mayer_
-`greg.okeefe@dst.defence.gov.au`
+_Greg O'Keefe `greg.okeefe@dst.defence.gov.au`, December 2020
+With important contributions from: 
+- Steve Wark and Wolfgang Mayer (Python sourced game 'Wolf_Goat_Cabbage')
+- Con Nicoloulias and Jake Townsend (Server Express, Website, GUI and TextUI)
