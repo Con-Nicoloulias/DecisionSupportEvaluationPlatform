@@ -1,0 +1,143 @@
+<!-- Created by Jake Townsend on 15/10/20. -->
+<!DOCTYPE html>
+<html lang="en">
+  <title>DSP Settings</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <script type="text/javascript" src="../js/functions.js"></script>
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"
+  ></script>
+
+  <body>
+    <section class="" id="">
+      <nav
+        class="navbar navbar-expand-lg navbar-fixed-top text-nowrap navbar-dark bg-dark"
+      >
+        <a class="navbar-brand d-flex w-50 mr-auto" href="../index.html">
+          Decision Support Platform</a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggler"
+          aria-controls="navbarToggler"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse w-100" id="navbarToggler">
+          <ul class="navbar-nav w-100 justify-content-end ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Game List</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gameListComplete.html">Completed List</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="settings.html">Settings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <div class="w-100 h-100 bg-svg sectionScroll">
+      <section class="p-2">
+        <div class="w-100">
+          <h1 class="text-center">Settings</h1>
+        </div>
+      </section>
+
+      <section
+        class="container bg-light h-100 pt-4 pb-4 border-size-2 border-dark"
+      >
+        <div class="d-flex flex-column h-100">
+          <div class="w-100 h-100 p-3" id="">
+            <form>
+              <h4>Choose a game / scenario</h4>
+              <input
+                type="radio"
+                id="wolfGoatCabbage"
+                name="game"
+                value="wolfGoatCabbage"
+              />
+              <label for="wolfGoatCabbage">Wolf Goat Cabbage</label><br />
+              <input type="radio" id="joadia" name="game" value="joadia" />
+              <label for="joadia">Joadia</label><br /><br />
+
+              <h4>Timer</h4>
+              <input type="radio" id="no" name="timer" value="no" />
+              <label for="no">No</label>
+              <input type="radio" id="yes" name="timer" value="yes" />
+              <label for="yes">Yes</label><br />
+
+              <label for="minutes">Enter time in minutes.</label><br />
+              <input
+                type="text"
+                id="minutes"
+                name="minutes"
+                value=""
+                disabled="true"
+              /><br /><br />
+
+              <h4>Interfaces</h4>
+              <input type="radio" id="TextUI" name="interface" value="textUI" />
+              <label for="textUI">Text UI</label><br />
+              <input type="radio" id="gui" name="interface" value="gui" />
+              <label for="gui">Graphical UI</label><br />
+              <input type="radio" id="bothUI" name="interface" value="bothUI" />
+              <label for="bothUI">Both 50/50</label><br />
+
+              <label for="bothUI">Other:</label><br />
+              <input
+                type="range"
+                id="bothUI"
+                name="bothUI"
+                value="bothUI"
+                min="0"
+                max="100"
+              /><br /><br />
+
+              <h4>Enter maximum turns</h4>
+              <input type="text" id="maxMoves" name="maxMoves" placeholder="" />
+            </form>
+            <input
+              type="button"
+              class="bg-primary w-25 my-2 p-3 text-white"
+              onclick=""
+              value="Save"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

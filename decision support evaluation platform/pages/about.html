@@ -1,0 +1,124 @@
+<!-- Created by Jake Townsend on 15/10/20. -->
+<!DOCTYPE html>
+<html lang="en">
+  <title>Desicion Support Platform</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <script type="text/javascript" src="../js/functions.js"></script>
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- Call aboutPlatform() when loading -->
+  <body>
+    <section class="" id="">
+      <nav
+        class="navbar navbar-expand-lg navbar-fixed-top text-nowrap navbar-dark bg-dark"
+      >
+        <a class="navbar-brand d-flex w-50 mr-auto" href="../index.html">
+          Decision Support Platform</a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggler"
+          aria-controls="navbarToggler"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse w-100" id="navbarToggler">
+          <ul class="navbar-nav w-100 justify-content-end ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Game List</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gameListComplete.html">Completed List</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="settings.html">Settings</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <section class="w-100 h-100 bg-svg">
+      <section class="p-2">
+        <div class="w-100">
+          <!-- Title -->
+          <h1 class="text-center">About</h1>
+        </div>
+      </section>
+
+      <!-- About information -->
+      <section class="h-100">
+        <div id="aboutInfo" class="container bg-light border-size-2 border-dark">
+          <div id="platformIntro">
+            <h5>About Decision Support Evaluation Platform</h5>
+            The aim of this platform is to evaluate different decision support environments.
+          
+          </div>
+            <br>
+          <div id="platformInstructions">
+            <h5>Instructions</h5>
+            The navigation pane will direct the user to each of the following links:<br><br>
+            <strong>Game List</strong><br> 
+            All games that are created will be listed on this page,
+            with each game having their own unique 'gameID' and 'status'.
+            Clicking on 'Create New Game' will create a new game
+            that will appear under the following interfaces 'Graphic Interface' or 'Text Interface'.
+            Clicking on a game under the following interfaces will direct the user to play the same game on a unique interface.
+            The 'status' of the game will be changed when a user has completed the game.
+            This will transfer the game from 'Game List' to 'Completed List'.<br><br>
+            <strong>Completed List</strong><br>
+            This link displays a list of all the games that are completed under the corresponding interface
+            that was used to play the game. Clicking on a game will direct the user to do a playthrough. The user can click 'Next'
+            to see the next move made, as well as click 'Back' to see a previous move made. The 'Switch UI' button will direct the user to playthrough
+            a completed game on different interfaces.
+          </div>
+            <br>
+
+          <div id="creators">
+            <h5>Development Team</h5>
+            <strong>Project Manager:</strong><br>
+            Name - Greg O'Keefe<br>
+            Email - greg.okeefe@dst.defence.gov.au<br><br>
+            <strong>Assistant:</strong><br>
+            Name - Jake Townsend<br>Email - towjy006@mymail.unisa.edu.au<br><br>
+            <strong>Assistant:</strong><br>
+            Name - Constandinos Nicoloulias<br>Email - niccy013@mymail.unisa.edu.au
+          </div>
+        </div>
+        <p id="copyright"><strong>Copyright © 2020<strong></strong></p>
+      </section>
+    </section>
+  </body>
+</html>

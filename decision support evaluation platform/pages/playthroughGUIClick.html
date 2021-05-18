@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Desicion Support Platform</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../css/GUIStyle.css" />
+  <script type="text/javascript" src="../js/GUIClick.js"></script>
+
+  <!-- Bootstrap CSS -->
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- Call playthroughLoad() and getGameIDFile() when loading -->
+  <body id="overall" onload="playthroughLoad(); getGameIDFile();">
+    <section class="" id="">
+      <nav id="navbar"
+        class="navbar navbar-expand-lg navbar-fixed-top text-nowrap navbar-dark bg-dark"
+      >
+        <a class="navbar-brand d-flex w-50 mr-auto" href="../index.html">
+          Decision Support Platform</a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggler"
+          aria-controls="navbarToggler"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse w-100" id="navbarToggler">
+          <ul class="navbar-nav w-100 justify-content-end ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Game List</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gameListComplete.html">Completed List</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="settings.html">Settings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <section class="w-100 h-100 bg-svg">
+      <!-- SVG Characters -->
+      <img id="Goat" class="svg" src="../images/svg/lemmling-Cartoon-goat.svg"></img>
+      <img id="Wolf" class="svg" src="../images/svg/wolf.svg"></img>
+      <img id="BoatMan" class="svg" src="../images/svg/Thumbs-Up-Boy-In-Speed-Boat.svg"></img>
+      <img id="Cabbage" class="svg" src="../images/svg/green_cabbage.svg"></img>
+
+      <!-- Web page title -->
+      <h5 id="playthrough" class="text-center">Play Through</h5>
+
+      <!-- Div for each environmental area -->
+      <div id="landUp" class="form-group"></div>
+      <div id="farRiver" class="form-group">
+        <p id="output" class="col-5"></p>
+      </div>    
+      <div id="nearRiver" class="form-group"></div>
+      <div id="landDown" class="form-group">
+        <!-- Back button -->
+        <input             
+            type="button"
+            class="offset-9 col-2 bg-primary my-1 p-2 text-white"
+            onclick="backMove();"
+            value="Back"
+        />        
+        <!-- Next button -->
+        <input
+            type="button"
+            class="offset-9 col-2 bg-primary my-1 p-2 text-white"
+            onclick="nextMove();"
+            value="Next"
+        />
+        <!-- Switch UI button -->
+        <input
+            type="button"
+            class="offset-9 col-2 bg-primary my-1 p-2 text-white"
+            onclick="switchUI();"
+            value="Switch UI"
+        />
+        <!-- Game ID -->
+        <small id="smallGameID"></small>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="../js/GUIClick.js"></script>
+  </body>
+</html>

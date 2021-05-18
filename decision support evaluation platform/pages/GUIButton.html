@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <title>Decision Support Platform</title>
+    <link rel="stylesheet" href="../css/GUIStyle.css" />
+
+    <!-- Bootstrap CSS -->
+    <link href="/Content/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+
+    <script type="text/javascript" src="../js/GUIButton.js"></script>
+</head>
+<body onload="pageLoad();">
+    <!-- SVG Characters -->
+    <img id="Goat" class="svg" src="../images/svg/lemmling-Cartoon-goat.svg"></img>
+    <img id="Wolf" class="svg" src="../images/svg/wolf.svg"></img>
+    <img id="BoatMan" class="svg" src="../images/svg/Thumbs-Up-Boy-In-Speed-Boat.svg"></img>
+    <img id="Cabbage" class="svg" src="../images/svg/green_cabbage.svg"></img>
+
+    <!-- Web page title -->
+    <h3 id="heading" style="text-align:center"></h3>
+
+    <!-- Div for each environmental area -->
+    <div id="landUp" class="form-group"></div>
+    <div id="farRiver" class="form-group">
+        <div id="scenarioBox" class="col-4">
+            <h5 id="scenarioTitle" class="text-center">Scenario</h5>
+            <p id="scenario"></p>
+        </div>
+        <h5 id="moves" class="offset-8 col-4 text-center">Moves remaining: </h5>
+    </div>
+    <div id="nearRiver" class="form-group">
+        <div id="instructBox" class="col-4">
+            <h5 id="instructTitle" class="text-center">How to play</h5>
+            <p id="instructions"></p>
+        </div>
+    </div>
+    <div id="landDown" class="form-group">
+        <br>
+        <!-- Buttons for SVG characters to Load and Unload from Boat -->
+        <button id="OnGoat" type="button" class="btn btn-outline-dark offset-1 col-2"
+        onclick="goatOnBoat()">Load Goat</button>
+        <!-- Button to move Boat -->
+        <button id="MoveBoat" type="button" class="btn btn-outline-dark offset-6 col-2" 
+        onclick="moveBoat()">Move Boat</button>
+        <button id="OnWolf" type="button" class="btn btn-outline-dark offset-1 col-2"
+        onclick="wolfOnBoat()">Load Wolf</button>
+        <br>
+        <button id="OnCabbage" type="button" class="btn btn-outline-dark offset-1 col-2"
+        onclick="cabbageOnBoat()">Load Cabbage</button>
+        <button id="UnloadBoat" type="button" class="btn btn-outline-dark offset-6 col-2"
+        onclick="OffBoat()">Unload</button>
+        <small id="smallGameID"></small>
+    </div>
+
+    <script type="text/javascript" src="../js/GUIButton.js"></script>
+    
+</body>
+</html>

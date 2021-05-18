@@ -1,0 +1,11 @@
+load wolf
+cross
+unload
+cross
+load goat
+cross
+unload
+cross
+load cabbage
+cross
+unload

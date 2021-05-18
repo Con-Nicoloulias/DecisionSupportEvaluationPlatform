@@ -1,0 +1,211 @@
+{
+  "0": {
+    "move": {
+      "verb": "load",
+      "object": "goat"
+    },
+    "state": {
+      "boat": "near_side",
+      "cabbage": "near_side",
+      "goat": "boat",
+      "wolf": "near_side"
+    },
+    "status": "continue"
+  },
+  "1": {
+    "move": {
+      "verb": "cross"
+    },
+    "state": {
+      "boat": "far_side",
+      "cabbage": "near_side",
+      "goat": "boat",
+      "wolf": "near_side"
+    },
+    "status": "continue"
+  },
+  "2": {
+    "move": {
+      "verb": "unload"
+    },
+    "state": {
+      "boat": "far_side",
+      "cabbage": "near_side",
+      "goat": "far_side",
+      "wolf": "near_side"
+    },
+    "status": "continue"
+  },
+  "3": {
+    "move": {
+      "verb": "cross"
+    },
+    "state": {
+      "boat": "near_side",
+      "cabbage": "near_side",
+      "goat": "far_side",
+      "wolf": "near_side"
+    },
+    "status": "continue"
+  },
+  "4": {
+    "move": {
+      "verb": "load",
+      "object": "wolf"
+    },
+    "state": {
+      "boat": "near_side",
+      "cabbage": "near_side",
+      "goat": "far_side",
+      "wolf": "boat"
+    },
+    "status": "continue"
+  },
+  "5": {
+    "move": {
+      "verb": "cross"
+    },
+    "state": {
+      "boat": "far_side",
+      "cabbage": "near_side",
+      "goat": "far_side",
+      "wolf": "boat"
+    },
+    "status": "continue"
+  },
+  "6": {
+    "move": {
+      "verb": "unload"
+    },
+    "state": {
+      "boat": "far_side",
+      "cabbage": "near_side",
+      "goat": "far_side",
+      "wolf": "far_side"
+    },
+    "status": "continue"
+  },
+  "7": {
+    "move": {
+      "verb": "load",
+      "object": "goat"
+    },
+    "state": {
+      "boat": "far_side",
+      "cabbage": "near_side",
+      "goat": "boat",
+      "wolf": "far_side"
+    },
+    "status": "continue"
+  },
+  "8": {
+    "move": {
+      "verb": "cross"
+    },
+    "state": {
+      "boat": "near_side",
+      "cabbage": "near_side",
+      "goat": "boat",
+      "wolf": "far_side"
+    },
+    "status": "continue"
+  },
+  "9": {
+    "move": {
+      "verb": "unload"
+    },
+    "state": {
+      "boat": "near_side",
+      "cabbage": "near_side",
+      "goat": "near_side",
+      "wolf": "far_side"
+    },
+    "status": "continue"
+  },
+  "10": {
+    "move": {
+      "verb": "load",
+      "object": "cabbage"
+    },
+    "state": {
+      "boat": "near_side",
+      "cabbage": "boat",
+      "goat": "near_side",
+      "wolf": "far_side"
+    },
+    "status": "continue"
+  },
+  "11": {
+    "move": {
+      "verb": "cross"
+    },
+    "state": {
+      "boat": "far_side",
+      "cabbage": "boat",
+      "goat": "near_side",
+      "wolf": "far_side"
+    },
+    "status": "continue"
+  },
+  "12": {
+    "move": {
+      "verb": "unload"
+    },
+    "state": {
+      "boat": "far_side",
+      "cabbage": "far_side",
+      "goat": "near_side",
+      "wolf": "far_side"
+    },
+    "status": "continue"
+  },
+  "13": {
+    "move": {
+      "verb": "cross"
+    },
+    "state": {
+      "boat": "near_side",
+      "cabbage": "far_side",
+      "goat": "near_side",
+      "wolf": "far_side"
+    },
+    "status": "continue"
+  },
+  "14": {
+    "move": {
+      "verb": "load",
+      "object": "goat"
+    },
+    "state": {
+      "boat": "near_side",
+      "cabbage": "far_side",
+      "goat": "boat",
+      "wolf": "far_side"
+    },
+    "status": "continue"
+  },
+  "15": {
+    "move": {
+      "verb": "cross"
+    },
+    "state": {
+      "boat": "far_side",
+      "cabbage": "far_side",
+      "goat": "boat",
+      "wolf": "far_side"
+    },
+    "status": "continue"
+  },
+  "16": {
+    "move": {
+      "verb": "unload"
+    },
+    "state": {
+      "boat": "far_side",
+      "cabbage": "far_side",
+      "goat": "far_side",
+      "wolf": "far_side"
+    },
+    "status": "win"
+  }
+}

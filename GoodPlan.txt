@@ -1,0 +1,23 @@
+load goat
+cross
+unload
+end
+cross
+end
+load wolf
+cross
+unload
+end
+load goat
+cross
+unload
+end
+load cabbage
+cross
+unload
+end
+cross
+end
+load goat
+cross
+unload

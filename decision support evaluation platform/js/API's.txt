@@ -1,0 +1,48 @@
+API's -------------------------------
+
+Output: New Game API-----------
+{
+  "new_game_id": 0
+}
+
+Input: Send Move API ---------
+{
+  "verb": "load",
+  "object": "goat"
+}
+
+Output: Game State API -----------
+{
+  "moves_remaining": 24,
+  "state": {
+    "boat": "near_side"
+    "cabbage": "near_side"
+    "goat": "boat"
+    "wolf": "near_side"
+  },
+  "status": "continue"
+}
+
+Output: Game List API -------------
+{
+  "0": {
+    "moves_remaining": 25,
+    "state": {
+      "boat": "near_side",
+      "cabbage": "near_side",
+      "goat": "near_side",
+      "wolf": "near_side"
+    },
+    "status":"continue"
+  },
+  "1": {
+    "moves_remaining": 25,
+    "state":{
+      "boat": "near_side",
+      "cabbage": "near_side",
+      "goat": "near_side",
+      "wolf": "near_side"
+    },
+    "status": "continue"
+  }
+}

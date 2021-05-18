@@ -1,0 +1,112 @@
+/* Created by Jake Townsend on 15/10/20. */
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+h4 {
+  margin: 0 0 3px 0;
+  font-size: 24px;
+}
+
+/* Background - https://www.heropatterns.com/ */
+.bg-svg {
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23727272' fill-opacity='0.15'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.border-size-2 {
+  border-style: solid;
+  border-width: 2px !important;
+}
+
+.border-size-3 {
+  border-style: solid;
+  border-width: 3px !important;
+}
+
+.sectionScroll {
+  overflow-y: scroll;
+}
+
+/* Used on the welcome Page */
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("https://source.unsplash.com/SMSLyc9FHl0/1920x1080");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fadeOverlay {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.fadeOverlay2 {
+  background-color: rgba(139, 139, 139, 0.2);
+}
+
+#landingText {
+  font-size: 100px;
+  text-shadow: 2px 2px 0px #d8d8d865;
+}
+
+#outputDiv {
+  padding: 8px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-width: 1px;
+  border-style: solid;
+  background-color: rgb(224, 224, 224);
+}
+
+#decision {
+  margin-top: 8px;
+  padding-left: 8px;
+  border-width: 1px;
+  background-color: rgb(224, 224, 224);
+}
+
+.listArea {
+  height: 80%;
+}
+
+#aboutInfo {
+  height: 80%;
+  overflow-y: auto;
+  margin-bottom: 8px;
+}
+
+#copyright {
+  margin-left: 10px;
+}
+
+#platformIntro {
+  margin-top: 10px;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of heading to 30px */
+@media screen and (min-width: 801px) {
+  #heading {
+    /* font-size: 30px; */
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of heading to 20px */
+@media screen and (max-width: 800px) {
+  #heading {
+    /* font-size: 20px; */
+  }
+  #outputDiv {
+    font-size: 10px;
+  }
+  #smallGameID,
+  #hint {
+    font-size: 10px;
+  }
+  #landingText {
+    font-size: 60px;
+  }
+}
