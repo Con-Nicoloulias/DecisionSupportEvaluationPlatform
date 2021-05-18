@@ -16,7 +16,6 @@ The scenario is a well known puzzle and goes as follows. A farmer is on one side
 7. Type "nodemon index.js" to run the server.
 8. Use http://localhost:8000 to access the server.
 
-_Greg O'Keefe `greg.okeefe@dst.defence.gov.au`, December 2020
-With important contributions from: 
+_Greg O'Keefe `greg.okeefe@dst.defence.gov.au`, December 2020, with important contributions from: 
 - Steve Wark and Wolfgang Mayer (Python sourced game 'Wolf_Goat_Cabbage')
 - Con Nicoloulias and Jake Townsend (Server Express, Website, GUI and TextUI)
